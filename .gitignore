@@ -1,0 +1,10 @@
+*o3de-packages/
+/[Bb]uild
+[Cc]ache/
+/[Ii]nstall/
+
+o3de
+o3de-extras
+o3de-rgl-gem
+
+project.json.bak*

@@ -1,0 +1,4 @@
+BASE_IMAGE: osrf/ros:humble-desktop
+IMAGE_NAME: andino_o3de_ws_image
+CONTAINER_NAME: andino_o3de_ws_container
+WORKSPACE_FOLDER_NAME: andino_o3de_ws

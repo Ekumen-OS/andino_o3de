@@ -1,0 +1,18 @@
+{
+    "Amazon": {
+        "AssetProcessor": {
+            "Settings": {
+                "ScanFolder andino_o3de/Assets": {
+                    "watch": "@GEMROOT:andino_o3de@/Assets",
+                    "recursive": 1,
+                    "order": 101
+                },
+                "ScanFolder andino_o3de/Registry": {
+                    "watch": "@GEMROOT:andino_o3de@/Registry",
+                    "recursive": 1,
+                    "order": 102
+                }
+            }
+        }
+    }
+}

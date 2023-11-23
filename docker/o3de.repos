@@ -1,0 +1,17 @@
+repositories:
+  o3de-extras:
+    type: git
+    url: https://github.com/o3de/o3de-extras.git
+    version: 2310.2
+  o3de-rgl-gem:
+    type: git
+    url: https://github.com/RobotecAI/o3de-rgl-gem.git
+    version: development
+  RobotVacuumSample:
+    type: git
+    url: https://github.com/o3de/RobotVacuumSample.git
+    version: development
+  ROSConDemo:
+    type: git
+    url: https://github.com/o3de/ROSConDemo
+    version: main

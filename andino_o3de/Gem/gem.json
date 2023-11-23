@@ -1,0 +1,28 @@
+{
+    "gem_name": "andino_o3de",
+    "display_name": "andino_o3de",
+    "license": "What license andino_o3de uses goes here: i.e. Apache-2.0 or MIT",
+    "license_url": "Link to the license web site goes here: i.e. https://opensource.org/licenses/Apache-2.0 Or https://opensource.org/licenses/MIT",
+    "origin": "The name of the originator goes here. i.e. XYZ Inc.",
+    "origin_url": "The primary repo for andino_o3de goes here: i.e. http://www.mydomain.com",
+    "type": "",
+    "summary": "A short description of andino_o3de.",
+    "canonical_tags": [
+        "Gem"
+    ],
+    "user_tags": [
+        "andino_o3de"
+    ],
+    "platforms": [
+        "${Platforms}"
+    ],
+    "icon_path": "preview.png",
+    "requirements": "",
+    "compatible_engines": [
+        "o3de-sdk>=1.2.0",
+        "o3de>=1.2.0"
+    ],
+    "documentation_url": "",
+    "dependencies": [
+    ]
+}

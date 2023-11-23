@@ -1,0 +1,30 @@
+{
+    "project_name": "andino_o3de",
+    "project_id": "{486C28E3-1479-42DC-B84D-F73808068851}",
+    "origin": "Open 3D Engine Extras: andino_o3de",
+    "license": "https://github.com/o3de/o3de-extras/tree/development/Templates/Ros2ProjectTemplate/Template/LICENSE.txt",
+    "display_name": "andino_o3de",
+    "summary": "Template for ROS2 projects.",
+    "canonical_tags": [
+        "Project"
+    ],
+    "user_tags": [
+        "andino_o3de",
+        "ROS2",
+        "ROS"
+    ],
+    "icon_path": "preview.png",
+    "engine": "o3de-sdk",
+    "external_subdirectories": [
+        "Gem"
+    ],
+    "restricted": "andino_o3de",
+    "gem_names": [
+        "RGL",
+        "ROS2",
+        "RosRobotSample",
+        "WarehouseAssets",
+        "WarehouseSample"
+    ],
+    "engine_version": "2.2.1"
+}
