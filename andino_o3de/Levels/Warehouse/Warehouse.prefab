@@ -3,6 +3,21 @@
         "Id": "Entity_[1146574390643]",
         "Name": "Level",
         "Components": {
+            "AZ::Render::EditorDisplayMapperComponent": {
+                "$type": "AZ::Render::EditorDisplayMapperComponent",
+                "Id": 17247399738527738392,
+                "Controller": {
+                    "Configuration": {
+                        "AcesParameterOverrides": {
+                            "PresetODT": 48
+                        }
+                    }
+                }
+            },
+            "AZ::Render::EditorSpecularReflectionsComponent": {
+                "$type": "AZ::Render::EditorSpecularReflectionsComponent",
+                "Id": 676822742521980954
+            },
             "Component_[10641544592923449938]": {
                 "$type": "EditorInspectorComponent",
                 "Id": 10641544592923449938
@@ -26,7 +41,8 @@
                 "Child Entity Order": [
                     "Instance_[650636534085]/ContainerEntity",
                     "Entity_[1176639161715]",
-                    "Instance_[4203410170357]/ContainerEntity"
+                    "Instance_[25223324836542]/ContainerEntity",
+                    "Entity_[44374584009406]"
                 ]
             },
             "Component_[15230859088967841193]": {
@@ -167,6 +183,79 @@
                 }
             }
         },
+        "Entity_[44374584009406]": {
+            "Id": "Entity_[44374584009406]",
+            "Name": "Camera",
+            "Components": {
+                "EditorCameraComponent": {
+                    "$type": "{CA11DA46-29FF-4083-B5F6-E02C3A8C3A3D} EditorCameraComponent",
+                    "Id": 4108039195278005494,
+                    "Controller": {
+                        "Configuration": {
+                            "Field of View": 60.0
+                        }
+                    }
+                },
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 1103536149642979245
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 11438674766643893590
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 2026732559101585029
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 4007804915532385043
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 14212273511188487189
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 12892308847254399692
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 8537711783381946346
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 705300276560515576
+                },
+                "FlyCameraInputComponent": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 7307207537318684724,
+                    "m_template": {
+                        "$type": "FlyCameraInputComponent",
+                        "Move Speed": 1.0,
+                        "Rotation Speed": 1.0
+                    }
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 12852138737611869236,
+                    "Parent Entity": "Entity_[1146574390643]",
+                    "Transform Data": {
+                        "Translate": [
+                            -0.2622300982475281,
+                            1.2558833360671997,
+                            0.47602662444114685
+                        ],
+                        "Rotate": [
+                            6.4542646408081055,
+                            5.708604335784912,
+                            -138.6758270263672
+                        ]
+                    }
+                }
+            }
+        },
         "Entity_[884702554292]": {
             "Id": "Entity_[884702554292]",
             "Name": "Environmental Light",
@@ -251,348 +340,9 @@
         }
     },
     "Instances": {
-        "Instance_[4203410170357]": {
-            "Source": "Assets/Importer/andino.urdf.prefab",
+        "Instance_[25223324836542]": {
+            "Source": "Prefabs/andino.urdf.prefab",
             "Patches": [
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3718078865909]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/assetHint",
-                    "value": "assets/urdfimporter/2639551408_andino.urdf{67158a65-4fdd-500c-b692-7fafe49802c5}/wheel.stl.azmodel"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3718078865909]/Components/EditorMaterialComponent/Controller/Configuration/materials/0/Value/MaterialAsset/loadBehavior",
-                    "value": "QueueLoad"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3718078865909]/Components/EditorMaterialComponent/Controller/Configuration/materials/1/Value/MaterialAsset/loadBehavior",
-                    "value": "QueueLoad"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[3683719127541]/Components/EditorEntitySortComponent/Child Entity Order/0",
-                    "value": "Entity_[3688014094837]"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3688014094837]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/assetHint",
-                    "value": "assets/urdfimporter/2639551408_andino.urdf{67158a65-4fdd-500c-b692-7fafe49802c5}/motor.stl.azmodel"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3688014094837]/Components/EditorMaterialComponent/Controller/Configuration/materials/0/Value/MaterialAsset/loadBehavior",
-                    "value": "QueueLoad"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3688014094837]/Components/EditorMaterialComponent/Controller/Configuration/materials/1/Value/MaterialAsset/loadBehavior",
-                    "value": "QueueLoad"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[3713783898613]/Components/EditorEntitySortComponent/Child Entity Order/0",
-                    "value": "Entity_[3718078865909]"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[3739553702389]/Components/EditorEntitySortComponent/Child Entity Order/0",
-                    "value": "Entity_[3743848669685]"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3679424160245]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/assetHint",
-                    "value": "assets/urdfimporter/2639551408_andino.urdf{67158a65-4fdd-500c-b692-7fafe49802c5}/caster_base.stl.azmodel"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3679424160245]/Components/EditorMaterialComponent/Controller/Configuration/materials/0/Value/MaterialAsset/loadBehavior",
-                    "value": "QueueLoad"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3679424160245]/Components/EditorMaterialComponent/Controller/Configuration/materials/1/Value/MaterialAsset/loadBehavior",
-                    "value": "QueueLoad"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[3730963767797]/Components/EditorEntitySortComponent/Child Entity Order/0",
-                    "value": "Entity_[3735258735093]"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[3666539258357]/Components/EditorEntitySortComponent/Child Entity Order/0",
-                    "value": "Entity_[3649359389173]"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[3666539258357]/Components/EditorEntitySortComponent/Child Entity Order/1",
-                    "value": "Entity_[3670834225653]"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[3675129192949]/Components/EditorEntitySortComponent/Child Entity Order/0",
-                    "value": "Entity_[3679424160245]"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3735258735093]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/assetHint",
-                    "value": "assets/urdfimporter/2639551408_andino.urdf{67158a65-4fdd-500c-b692-7fafe49802c5}/camera_mount.stl.azmodel"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3735258735093]/Components/EditorMaterialComponent/Controller/Configuration/materials/0/Value/MaterialAsset/loadBehavior",
-                    "value": "QueueLoad"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3735258735093]/Components/EditorMaterialComponent/Controller/Configuration/materials/1/Value/MaterialAsset/loadBehavior",
-                    "value": "QueueLoad"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3662244291061]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/assetHint",
-                    "value": "assets/urdfimporter/2639551408_andino.urdf{67158a65-4fdd-500c-b692-7fafe49802c5}/caster_wheel.stl.azmodel"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3662244291061]/Components/EditorMaterialComponent/Controller/Configuration/materials/0/Value/MaterialAsset/loadBehavior",
-                    "value": "QueueLoad"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3662244291061]/Components/EditorMaterialComponent/Controller/Configuration/materials/1/Value/MaterialAsset/loadBehavior",
-                    "value": "QueueLoad"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[3649359389173]/Components/EditorEntitySortComponent/Child Entity Order/0",
-                    "value": "Entity_[3653654356469]"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3653654356469]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/assetHint",
-                    "value": "assets/urdfimporter/2639551408_andino.urdf{67158a65-4fdd-500c-b692-7fafe49802c5}/rplidar-a1.stl.azmodel"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3653654356469]/Components/EditorMaterialComponent/Controller/Configuration/materials/0/Value/MaterialAsset/loadBehavior",
-                    "value": "QueueLoad"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3653654356469]/Components/EditorMaterialComponent/Controller/Configuration/materials/1/Value/MaterialAsset/loadBehavior",
-                    "value": "QueueLoad"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3726668800501]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/assetHint",
-                    "value": "assets/urdfimporter/2639551408_andino.urdf{67158a65-4fdd-500c-b692-7fafe49802c5}/chassis.stl.azmodel"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3726668800501]/Components/EditorMaterialComponent/Controller/Configuration/materials/0/Value/MaterialAsset/loadBehavior",
-                    "value": "QueueLoad"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3726668800501]/Components/EditorMaterialComponent/Controller/Configuration/materials/1/Value/MaterialAsset/loadBehavior",
-                    "value": "QueueLoad"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[3657949323765]/Components/EditorEntitySortComponent/Child Entity Order/0",
-                    "value": "Entity_[3662244291061]"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[3692309062133]/Components/EditorEntitySortComponent/Child Entity Order/0",
-                    "value": "Entity_[3696604029429]"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3743848669685]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/assetHint",
-                    "value": "assets/urdfimporter/2639551408_andino.urdf{67158a65-4fdd-500c-b692-7fafe49802c5}/wheel.stl.azmodel"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3743848669685]/Components/EditorMaterialComponent/Controller/Configuration/materials/0/Value/MaterialAsset/loadBehavior",
-                    "value": "QueueLoad"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3743848669685]/Components/EditorMaterialComponent/Controller/Configuration/materials/1/Value/MaterialAsset/loadBehavior",
-                    "value": "QueueLoad"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[3705193964021]/Components/EditorEntitySortComponent/Child Entity Order/0",
-                    "value": "Entity_[3657949323765]"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[3705193964021]/Components/EditorEntitySortComponent/Child Entity Order/1",
-                    "value": "Entity_[3709488931317]"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3709488931317]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/assetHint",
-                    "value": "assets/urdfimporter/2639551408_andino.urdf{67158a65-4fdd-500c-b692-7fafe49802c5}/caster_wheel_support.stl.azmodel"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3709488931317]/Components/EditorMaterialComponent/Controller/Configuration/materials/0/Value/MaterialAsset/loadBehavior",
-                    "value": "QueueLoad"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3709488931317]/Components/EditorMaterialComponent/Controller/Configuration/materials/1/Value/MaterialAsset/loadBehavior",
-                    "value": "QueueLoad"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3696604029429]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/assetHint",
-                    "value": "assets/urdfimporter/2639551408_andino.urdf{67158a65-4fdd-500c-b692-7fafe49802c5}/motor.stl.azmodel"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3696604029429]/Components/EditorMaterialComponent/Controller/Configuration/materials/0/Value/MaterialAsset/loadBehavior",
-                    "value": "QueueLoad"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3696604029429]/Components/EditorMaterialComponent/Controller/Configuration/materials/1/Value/MaterialAsset/loadBehavior",
-                    "value": "QueueLoad"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[3645064421877]/Components/EditorEntitySortComponent/Child Entity Order/0",
-                    "value": "Entity_[3722373833205]"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[3722373833205]/Components/EditorEntitySortComponent/Child Entity Order/0",
-                    "value": "Entity_[3683719127541]"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[3722373833205]/Components/EditorEntitySortComponent/Child Entity Order/1",
-                    "value": "Entity_[3675129192949]"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[3722373833205]/Components/EditorEntitySortComponent/Child Entity Order/2",
-                    "value": "Entity_[3666539258357]"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[3722373833205]/Components/EditorEntitySortComponent/Child Entity Order/3",
-                    "value": "Entity_[3700898996725]"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[3722373833205]/Components/EditorEntitySortComponent/Child Entity Order/4",
-                    "value": "Entity_[3692309062133]"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[3722373833205]/Components/EditorEntitySortComponent/Child Entity Order/5",
-                    "value": "Entity_[3726668800501]"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[3722373833205]/Components/EditorEntitySortComponent/Child Entity Order/6",
-                    "value": "Entity_[3705193964021]"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[3722373833205]/Components/EditorEntitySortComponent/Child Entity Order/7",
-                    "value": "Entity_[3730963767797]"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[3722373833205]/Components/EditorEntitySortComponent/Child Entity Order/8",
-                    "value": "Entity_[3739553702389]"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[3722373833205]/Components/EditorEntitySortComponent/Child Entity Order/9",
-                    "value": "Entity_[3713783898613]"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3670834225653]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/assetHint",
-                    "value": "assets/urdfimporter/2639551408_andino.urdf{67158a65-4fdd-500c-b692-7fafe49802c5}/chassis_top.stl.azmodel"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3670834225653]/Components/EditorMaterialComponent/Controller/Configuration/materials/0/Value/MaterialAsset/loadBehavior",
-                    "value": "QueueLoad"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[3670834225653]/Components/EditorMaterialComponent/Controller/Configuration/materials/1/Value/MaterialAsset/loadBehavior",
-                    "value": "QueueLoad"
-                },
-                {
-                    "op": "add",
-                    "path": "/ContainerEntity/Components/EditorDisabledCompositionComponent",
-                    "value": {
-                        "$type": "EditorDisabledCompositionComponent",
-                        "Id": 12451919986687235144,
-                        "DisabledComponents": []
-                    }
-                },
-                {
-                    "op": "add",
-                    "path": "/ContainerEntity/Components/EditorEntityIconComponent",
-                    "value": {
-                        "$type": "EditorEntityIconComponent",
-                        "Id": 13351176299743446489,
-                        "EntityIconAssetId": {
-                            "guid": "{00000000-0000-0000-0000-000000000000}",
-                            "subId": 0
-                        }
-                    }
-                },
-                {
-                    "op": "add",
-                    "path": "/ContainerEntity/Components/EditorEntitySortComponent",
-                    "value": {
-                        "$type": "EditorEntitySortComponent",
-                        "Id": 13988954940694712868,
-                        "Child Entity Order": [
-                            "Entity_[3645064421877]"
-                        ]
-                    }
-                },
-                {
-                    "op": "add",
-                    "path": "/ContainerEntity/Components/EditorInspectorComponent",
-                    "value": {
-                        "$type": "EditorInspectorComponent",
-                        "Id": 10555098438648751578,
-                        "ComponentOrderEntryArray": []
-                    }
-                },
-                {
-                    "op": "add",
-                    "path": "/ContainerEntity/Components/EditorOnlyEntityComponent",
-                    "value": {
-                        "$type": "EditorOnlyEntityComponent",
-                        "Id": 7984474314552716189,
-                        "IsEditorOnly": false
-                    }
-                },
-                {
-                    "op": "add",
-                    "path": "/ContainerEntity/Components/EditorPendingCompositionComponent",
-                    "value": {
-                        "$type": "EditorPendingCompositionComponent",
-                        "Id": 16139731475296172905,
-                        "PendingComponents": []
-                    }
-                },
                 {
                     "op": "replace",
                     "path": "/ContainerEntity/Components/TransformComponent/Parent Entity",
@@ -600,18 +350,16 @@
                 },
                 {
                     "op": "replace",
-                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/0",
-                    "value": 2.462414264678955
-                },
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/1",
-                    "value": -13.494980812072754
-                },
-                {
-                    "op": "replace",
                     "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/2",
                     "value": 0.07550878822803497
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[25236209738430]"
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[25334993986238]"
                 }
             ]
         },
@@ -620,13 +368,8 @@
             "Patches": [
                 {
                     "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[5813610029120484168]/Parent Entity",
-                    "value": "../Entity_[1146574390643]"
-                },
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[5813610029120484168]/Transform Data/Translate/1",
-                    "value": -12.499871253967283
+                    "path": "/Entities/Entity_[729070309458]/Components/Component_[3130608849925615607]/Controller/Configuration/ModelAsset/assetHint",
+                    "value": "o3descene/warehouse.fbx.azmodel"
                 },
                 {
                     "op": "replace",
@@ -637,6 +380,16 @@
                     "op": "replace",
                     "path": "/Entities/Entity_[729070309458]/Components/Component_[9485936813148123686]/ShapeConfiguration/PhysicsAsset/Configuration/PhysicsAsset/assetHint",
                     "value": "o3descene/warehouse.fbx.pxmesh"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[707595472978]/Components/Component_[2658235371681328481]/Controller/Configuration/ModelAsset/assetHint",
+                    "value": "o3descene/terrain.fbx.azmodel"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[5813610029120484168]/Parent Entity",
+                    "value": "../Entity_[1146574390643]"
                 }
             ]
         }

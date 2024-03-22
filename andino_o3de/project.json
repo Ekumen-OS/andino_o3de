@@ -20,6 +20,7 @@
     ],
     "restricted": "andino_o3de",
     "gem_names": [
+        "ProteusRobot",
         "RGL",
         "ROS2",
         "RosRobotSample",
