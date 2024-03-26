@@ -2,13 +2,28 @@
 
 <img src=docs/andino_warehouse.png width=500 />
 
-## Workspace setup
+## :clipboard: Description
+
+[`Andino`](https://github.com/Ekumen-OS/andino) is a fully open-source diff drive robot designed for educational purposes and low-cost applications. It is fully integrated with ROS 2 and it is a great base platform to improve skills over the robotics field.
+
+`andino_o3de` leverages the power of [O3DE](https://o3de.org/) for an andino simulation and
+serves as an entry point for people looking for starting with O3DE Simulator.
+
+## :clamp: Platforms
+
+- OS:
+  - Ubuntu 22.04 Jammy Jellyfish
+- O3DE:
+  - Tested on 23.10.2
+- ROS 2: Humble Hawksbill
+
+## :inbox_tray: Workspace setup
 
 Refer to [workspace setup](WORKSPACE_SETUP.md) for setting up the workspace.
 
-## Usage
+## :rocket: Usage
 
-Open the O3DE Editor of the project.
+Open the O3DE Editor of the project. Refer to [workspace setup](WORKSPACE_SETUP.md).
 
 
 ### RViz Visualization
