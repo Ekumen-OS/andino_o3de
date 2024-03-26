@@ -1,10 +1,10 @@
 {
     "project_name": "andino_o3de",
     "project_id": "{486C28E3-1479-42DC-B84D-F73808068851}",
-    "origin": "Open 3D Engine Extras: andino_o3de",
-    "license": "https://github.com/o3de/o3de-extras/tree/development/Templates/Ros2ProjectTemplate/Template/LICENSE.txt",
+    "origin": "https://github.com/Ekumen-OS/andino_o3de",
+    "license": "https://opensource.org/license/bsd-3-clause",
     "display_name": "andino_o3de",
-    "summary": "Template for ROS2 projects.",
+    "summary": "O3DE simulation of Andino robot",
     "canonical_tags": [
         "Project"
     ],
@@ -27,5 +27,6 @@
         "WarehouseAssets",
         "WarehouseSample"
     ],
-    "engine_version": "2.2.1"
+    "engine_version": "2.2.1",
+    "version": "0.1.0"
 }
