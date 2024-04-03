@@ -23,7 +23,7 @@ There are two build options:
   1. Option A: Only For Demo!
     - Container will install o3de binaries and compile the andino_o3de project.
 
-  2. Option B: Using o3de binaries. (Development)
+  3. Option B: Using o3de binaries. (Development)
      - Container will have the o3de-sdk already installed. The user will only need to build the project
 
   ```
@@ -126,19 +126,23 @@ git clone o3de-rgl-gem
 ```
 Be sure to checkout version 2310.2
 
+```
 export O3DE_INSTALL=/home/${USERNAME}/andino_o3de_ws/o3de
-
+```
 #### Register sdk engine
+```
 cd to o3de
 scripts/o3de.sh register --this-engine
-
+```
 #### Register gems
+```
 scripts/o3de.sh register --all-gems-path ${O3DE_INSTALL}/../o3de-extras/Gems
 scripts/o3de.sh register --all-templates-path ${O3DE_INSTALL}/../o3de-extras/Templates
 scripts/o3de.sh register --all-projects-path ${O3DE_INSTALL}/../o3de-extras/Projects
-
+```
+```
 scripts/o3de.sh register --gem-path ${O3DE_INSTALL}/../o3de-rgl-gem --force
-
+```
 
 ## Appendix
 
