@@ -6,7 +6,7 @@ repositories:
   o3de-rgl-gem:
     type: git
     url: https://github.com/RobotecAI/o3de-rgl-gem.git
-    version: development
+    version: 23f92afca6d8842988969cc130313910e3bf7aa5
   RobotVacuumSample:
     type: git
     url: https://github.com/o3de/RobotVacuumSample.git
