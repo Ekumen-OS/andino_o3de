@@ -23,6 +23,10 @@ There are two build options:
   1. Option A: Only For Demo!
     - Container will install o3de binaries and compile the andino_o3de project.
 
+  ```
+  ./docker/build.sh demo
+  ```
+
   3. Option B: Using o3de binaries. (Development)
      - Container will have the o3de-sdk already installed. The user will only need to build the project
 
